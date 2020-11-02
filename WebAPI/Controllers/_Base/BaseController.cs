@@ -8,7 +8,7 @@ using WebAPI.Responses;
 
 namespace WebAPI.Controllers._Base
 {
-    public  abstract class BaseController : ResponseController
+    public abstract class BaseController : ResponseController
     {
         protected delegate ResponseData ExecuteReponse(object res);
         protected delegate object ExecuteAction();

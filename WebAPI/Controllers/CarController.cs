@@ -16,7 +16,7 @@ namespace WebAPI.Controllers
             {
                 ValidationFromDataAnnotationValidate();
 
-                ValidationValidate(car.Brand == car.Name, "Brand is same Name");
+                ValidationValidate(car.Brand == car.Name, "Brand is the same as the Name");
 
                 return true;
             });
@@ -30,7 +30,7 @@ namespace WebAPI.Controllers
             {
                 NoDataValidate(id == 0, "No Data");
 
-                return true;
+                return "It's OK";
             });
         }
     }
